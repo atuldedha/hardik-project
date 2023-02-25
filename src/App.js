@@ -12,7 +12,7 @@ function App() {
         {/* sidebar component */}
         <Sidebar selected={selected} setSelected={setSelected} />
       </Box>
-      <Box sx={{ width: "100%" }}>
+      <Box sx={{ width: "100%", marginLeft: "130px" }}>
         {/* header component */}
         <Header selected={selected} setSelected={setSelected} />
         {/* rendering components based on tab selection */}

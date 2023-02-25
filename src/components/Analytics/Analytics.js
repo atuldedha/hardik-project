@@ -2,6 +2,7 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 import AnalyticsFinancialYear from "./AnalyticsFinancialYear/AnalyticsFinancialYear";
 import AnalyticsInfo from "./AnalyticsInfo/AnalyticsInfo";
+import AnalyticsLineChart from "./AnalyticsLineChart/AnalyticsLineChart";
 
 const Analytics = () => {
   return (
@@ -9,6 +10,7 @@ const Analytics = () => {
       sx={{
         marginTop: "40px",
         padding: "0 65px",
+        marginBottom: "140px",
       }}
     >
       {/*financial year text */}
@@ -26,6 +28,7 @@ const Analytics = () => {
           display: "flex",
           marginTop: "10px",
           gap: "6px",
+          marginBottom: "24px",
         }}
       >
         Till Date:
@@ -35,6 +38,8 @@ const Analytics = () => {
           *
         </Typography>
       </Typography>
+      {/* Line Chart */}
+      <AnalyticsLineChart />
     </Box>
   );
 };

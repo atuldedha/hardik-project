@@ -16,8 +16,10 @@ const Sidebar = ({ selected, setSelected }) => {
     <Box
       sx={{
         height: "100vh",
-        position: "sticky",
+        position: "fixed",
         left: 0,
+        top: 0,
+        bottom: 0,
         bgcolor: "var(--grayColor)",
         display: "flex",
         alignItems: "center",
@@ -25,6 +27,7 @@ const Sidebar = ({ selected, setSelected }) => {
         flexDirection: "column",
         gap: "110px",
         padding: "0 24px",
+        zIndex: 25,
       }}
     >
       <SidebarItem
