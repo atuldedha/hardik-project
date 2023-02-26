@@ -140,6 +140,78 @@ const collegePieChart = [
   },
 ];
 
+const tierData = [
+  {
+    id: 1,
+    name: "Tier 1",
+    value: 60,
+  },
+  {
+    id: 2,
+    name: "Tier 2",
+    value: 30,
+  },
+  {
+    id: 3,
+    name: "Tier 3",
+    value: 10,
+  },
+];
+
+const campusData = [
+  {
+    id: 1,
+    name: "Pool Campus Drive",
+    value: 30,
+  },
+  {
+    id: 2,
+    name: "Off Campus Drive",
+    value: 10,
+  },
+  {
+    id: 3,
+    name: "Campus Drive",
+    value: 60,
+  },
+];
+
+const driveData = [
+  {
+    id: 1,
+    name: "New",
+    value: 35,
+  },
+  {
+    id: 2,
+    name: "Recurring",
+    value: 65,
+  },
+];
+
+const locationWiseData = [
+  {
+    id: 1,
+    name: "North",
+    value: 80,
+  },
+  {
+    id: 2,
+    name: "East",
+    value: 80,
+  },
+  {
+    id: 3,
+    name: "West",
+    value: 75,
+  },
+  {
+    id: 4,
+    name: "South",
+    value: 80,
+  },
+];
+
 export {
   experienceData,
   jobData,
@@ -147,4 +219,8 @@ export {
   genderChartData,
   ctcBarChartData,
   collegePieChart,
+  tierData,
+  campusData,
+  driveData,
+  locationWiseData,
 };
