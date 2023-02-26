@@ -1,10 +1,24 @@
 import { Box, Typography } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import AnalyticsItem from "../AnalyticsItem/AnalyticsItem";
+import Connections from "../Connections/Connections";
+import PieChartInfo from "../PieChartInfo/PieChartInfo";
+import { tierData } from "../staticData";
 
-const CollegeNetwork = () => {
+const CollegeNetwork = ({ innerRef }) => {
+  // tier wise hiring data
+  const [tierChartData, setTierChartData] = useState({
+    labels: tierData.map((item) => item.name),
+    datasets: [
+      {
+        label: { display: false },
+        data: tierData.map((item) => item.value),
+        backgroundColor: ["#9F629A", "#FFD76F", "#E37C7C"],
+      },
+    ],
+  });
   return (
-    <Box sx={{ marginTop: "200px" }}>
+    <Box sx={{ marginTop: "200px" }} ref={innerRef}>
       {/* heading */}
       <Typography
         variant="h5"
@@ -32,6 +46,22 @@ const CollegeNetwork = () => {
       >
         <AnalyticsItem title="Total Connections" totalNumber={179} />
         <AnalyticsItem title="New Connections" totalNumber={51} />
+      </Box>
+
+      {/* connections and tier wise hiring chart */}
+      <Box
+        sx={{
+          display: "grid",
+          gridTemplateColumns: "2fr 2fr",
+          gap: "20px",
+          height: "330px",
+          marginTop: "40px",
+        }}
+      >
+        {/* custom component to represent experience bar chart */}
+        <PieChartInfo chartData={tierChartData} heading="Tier Wise Hiring" />
+        {/* connections */}
+        <Connections />
       </Box>
     </Box>
   );

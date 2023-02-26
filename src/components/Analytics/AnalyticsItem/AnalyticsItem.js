@@ -4,7 +4,13 @@ import { Box } from "@mui/system";
 import Arrow from "../../../images/arrowGray.svg";
 import ArrowBlue from "../../../images/arrowBlue.svg";
 
-const AnalyticsItem = ({ title, onClick, totalNumber, showViewMore }) => {
+const AnalyticsItem = ({
+  title,
+  onClick,
+  totalNumber,
+  showViewMore,
+  handleViewMoreClick,
+}) => {
   const [viewHover, setViewHover] = useState(false);
   return (
     <Box
@@ -73,6 +79,7 @@ const AnalyticsItem = ({ title, onClick, totalNumber, showViewMore }) => {
           }}
           onMouseEnter={() => setViewHover(true)}
           onMouseLeave={() => setViewHover(false)}
+          onClick={handleViewMoreClick}
         >
           view more
           <img src={viewHover ? ArrowBlue : Arrow} alt="arrow" className="" />

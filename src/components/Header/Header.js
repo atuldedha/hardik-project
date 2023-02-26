@@ -12,9 +12,9 @@ const Header = ({ selected, setSelected }) => {
         alignItems: "center",
         justifyContent: "space-between",
         padding: "0 40px 0 22px",
-        position: "sticky",
-        top: "0",
-        zIndex: "20",
+        // position: "sticky",
+        // top: "0",
+        // zIndex: "20",
         filter: "drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.5))",
       }}
     >
