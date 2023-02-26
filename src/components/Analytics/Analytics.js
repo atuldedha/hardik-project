@@ -12,6 +12,8 @@ import {
   jobData,
   jobPieChartData as jobPieChart,
   genderChartData,
+  ctcBarChartData,
+  collegePieChart,
 } from "./staticData";
 
 const Analytics = () => {
@@ -45,7 +47,7 @@ const Analytics = () => {
     ],
   });
   //   job pie chart data
-  const [jobPieChartData, setjobPieChartData] = useState({
+  const [jobPieChartData, setJobPieChartData] = useState({
     labels: jobPieChart.map((item) => item.name),
     datasets: [
       {
@@ -63,6 +65,72 @@ const Analytics = () => {
         label: { display: false },
         data: genderChartData.map((item) => item.value),
         backgroundColor: ["#67C587", "#C9E5D0"],
+      },
+    ],
+  });
+  // jobs filled bar chart data
+  const [filledJobData, setFilledJobData] = useState({
+    labels: jobData.map((item) => item.name),
+    datasets: [
+      {
+        label: { display: false },
+        data: jobData.map((item) => item.value),
+        backgroundColor: ["#67C587"],
+        borderColor: "#67C587",
+        barPercentage: 0.5,
+        barThickness: 20,
+      },
+    ],
+  });
+  // ctc bar chart data
+  const [ctcChartData, setCtcChartData] = useState({
+    labels: ctcBarChartData.map((item) => item.name),
+    datasets: [
+      {
+        label: { display: false },
+        data: ctcBarChartData.map((item) => item.max / 10),
+        backgroundColor: ["#FF9C09"],
+        borderColor: "#FF9C09",
+        barPercentage: 0.5,
+        barThickness: 20,
+      },
+      {
+        label: { display: false },
+        data: ctcBarChartData.map((item) => item.value / 10),
+        backgroundColor: ["#FFD76F"],
+        borderColor: "#FFD76F",
+        barPercentage: 0.5,
+        barThickness: 20,
+      },
+    ],
+  });
+
+  //   location job filled pie chart data
+  const [locationPieChartData, setLocationPieChartData] = useState({
+    labels: jobPieChart.map((item) => item.name),
+    datasets: [
+      {
+        label: { display: false },
+        data: jobPieChart.map((item) => item.value),
+        backgroundColor: ["#3F81BE", "#F0F9FD", "#DAF5FB", "#B6E8F8"],
+      },
+    ],
+  });
+
+  //   colllege wise job filled pie chart data
+  const [collegePieChartData, setCollegePieChartData] = useState({
+    labels: collegePieChart.map((item) => item.name),
+    datasets: [
+      {
+        label: { display: false },
+        data: collegePieChart.map((item) => item.value),
+        backgroundColor: [
+          "#FF7008",
+          "#9B7E53",
+          "#789737",
+          "#227E93",
+          "#815B8E",
+        ],
       },
     ],
   });
@@ -149,6 +217,54 @@ const Analytics = () => {
         <PieChartInfo
           chartData={genderPieChart}
           heading="Gender-Wise Applicants"
+        />
+      </Box>
+
+      {/* barcharts */}
+      <Box
+        sx={{
+          display: "grid",
+          gridTemplateColumns: "2fr 2fr",
+          gap: "20px",
+          height: "330px",
+          marginTop: "200px",
+        }}
+      >
+        {/* custom component to represent experience bar chart */}
+        <BarChartInfo
+          chartData={filledJobData}
+          heading="Total Jobs Filled"
+          xAxisLabel="Job Title"
+          yAxisLabel="Job Filled"
+        />
+        {/* custom component to represent job bar chart */}
+        <BarChartInfo
+          chartData={ctcChartData}
+          heading="CTC Offered"
+          xAxisLabel="Job Title"
+          yAxisLabel="CTC (in lakhs)"
+        />
+      </Box>
+
+      {/* pie charts */}
+      <Box
+        sx={{
+          display: "grid",
+          gridTemplateColumns: "2fr 2fr",
+          gap: "20px",
+          height: "330px",
+          marginTop: "16px",
+        }}
+      >
+        {/* custom component to represent experience bar chart */}
+        <PieChartInfo
+          chartData={locationPieChartData}
+          heading="Geo Location-wise Jobs Filled"
+        />
+        {/* custom component to represent job bar chart */}
+        <PieChartInfo
+          chartData={collegePieChartData}
+          heading="College-Wise Job Filled"
         />
       </Box>
     </Box>

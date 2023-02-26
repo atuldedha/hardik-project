@@ -85,4 +85,66 @@ const genderChartData = [
   },
 ];
 
-export { experienceData, jobData, jobPieChartData, genderChartData };
+const ctcBarChartData = [
+  {
+    id: 1,
+    name: "IOS Dev",
+    max: 80,
+    value: 60,
+  },
+  {
+    id: 2,
+    name: "Accountant",
+    max: 80,
+    value: 50,
+  },
+  {
+    id: 3,
+    name: "Graphic Designer",
+    max: 65,
+    value: 60,
+  },
+  {
+    id: 4,
+    name: "Front End Dev.",
+    max: 80,
+    value: 70,
+  },
+];
+
+const collegePieChart = [
+  {
+    id: 1,
+    name: "Nirma Uvi College",
+    value: 20,
+  },
+  {
+    id: 2,
+    name: "Nirmal Jena College",
+    value: 40,
+  },
+  {
+    id: 3,
+    name: "DJ Sanghvi College",
+    value: 70,
+  },
+  {
+    id: 4,
+    name: "AP Sign College",
+    value: 60,
+  },
+  {
+    id: 5,
+    name: "NYC College",
+    value: 80,
+  },
+];
+
+export {
+  experienceData,
+  jobData,
+  jobPieChartData,
+  genderChartData,
+  ctcBarChartData,
+  collegePieChart,
+};
