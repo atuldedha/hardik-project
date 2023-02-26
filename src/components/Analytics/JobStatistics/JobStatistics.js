@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Box, Typography } from "@mui/material";
 import AnalyticsItem from "../AnalyticsItem/AnalyticsItem";
 import BarChartInfo from "../BarChartInfo/BarChartInfo";
@@ -13,6 +13,8 @@ import {
 } from "../staticData";
 
 const JobStatistics = ({ innerRef }) => {
+  // ref to div for scrolling
+  const filledJobRef = useRef();
   // experience bar chart data
   const [experienceChartData, setEperienceChartData] = useState({
     labels: experienceData.map((item) => item.range),
@@ -162,7 +164,9 @@ const JobStatistics = ({ innerRef }) => {
           title="Job Filled"
           totalNumber={179}
           showViewMore
-          handleViewMoreClick={() => {}}
+          handleViewMoreClick={() => {
+            filledJobRef.current.scrollIntoView({ behavior: "smooth" });
+          }}
         />
         <AnalyticsItem title="Applications Received" totalNumber="27*" />
       </Box>
@@ -246,6 +250,7 @@ const JobStatistics = ({ innerRef }) => {
           height: "330px",
           marginTop: "200px",
         }}
+        ref={filledJobRef}
       >
         {/* custom component to represent experience bar chart */}
         <BarChartInfo
