@@ -5,6 +5,9 @@ import JobStatus from "../../components/Home/JobStatus/JobStatus";
 import Notifications from "../../components/Home/Notifications/Notifications";
 import CampusRecruitment from "../../components/Home/CampusRecruitment/CampusRecruitment";
 import MyCalendar from "../../components/Home/MyCalendar/MyCalendar";
+import ConnectedColleges from "../../components/Home/ConnectedColleges/ConnectedColleges";
+import Onboarding from "../../components/Home/Onboarding/Onboarding";
+import Reports from "../../components/Home/Reports/Reports";
 
 const Home = () => {
   return (
@@ -17,7 +20,9 @@ const Home = () => {
           marginBottom: "40px",
         }}
       >
+        {/* job status table component */}
         <JobStatus />
+        {/* notifications column */}
         <Notifications />
       </Box>
 
@@ -29,8 +34,27 @@ const Home = () => {
           marginBottom: "40px",
         }}
       >
+        {/* campus recruitment column */}
         <CampusRecruitment />
+        {/* calendar column */}
         <MyCalendar />
+      </Box>
+
+      <Box
+        sx={{
+          display: "grid",
+          gridTemplateColumns: "2fr 3fr 3fr",
+          gap: "20px",
+        }}
+      >
+        {/* connected colleges */}
+        <ConnectedColleges />
+
+        {/* custom component to represent job bar chart */}
+        <Reports />
+
+        {/* onboarding */}
+        <Onboarding />
       </Box>
     </Box>
   );

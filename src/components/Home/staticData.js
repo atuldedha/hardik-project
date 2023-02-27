@@ -1,3 +1,6 @@
+import College1 from "../../images/college1.svg";
+import College2 from "../../images/college2.svg";
+
 const jobStatusData = [
   {
     id: 1,
@@ -64,4 +67,32 @@ const campusRecruitmentData = [
   },
 ];
 
-export { jobStatusData, campusRecruitmentData };
+const collegeData = [
+  {
+    id: 1,
+    collegeName: "DJ Sanghvi College",
+    image: College1,
+  },
+  {
+    id: 2,
+    collegeName: "Nirma Uvi College",
+    image: College2,
+  },
+  {
+    id: 3,
+    collegeName: "DJ Sanghvi College",
+    image: College1,
+  },
+  {
+    id: 4,
+    collegeName: "Nirma Uvi College",
+    image: College2,
+  },
+  {
+    id: 5,
+    collegeName: "DJ Sanghvi College",
+    image: College1,
+  },
+];
+
+export { jobStatusData, campusRecruitmentData, collegeData };

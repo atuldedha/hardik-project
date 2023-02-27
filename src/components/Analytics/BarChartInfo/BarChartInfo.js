@@ -3,7 +3,13 @@ import { Box } from "@mui/system";
 import React from "react";
 import BarChart from "../BarChart/BarChart";
 
-const BarChartInfo = ({ chartData, heading, xAxisLabel, yAxisLabel }) => {
+const BarChartInfo = ({
+  chartData,
+  heading,
+  xAxisLabel,
+  yAxisLabel,
+  showLegend,
+}) => {
   return (
     <Box
       sx={{
@@ -33,6 +39,7 @@ const BarChartInfo = ({ chartData, heading, xAxisLabel, yAxisLabel }) => {
           chartData={chartData}
           xAxisLabel={xAxisLabel}
           yAxisLabel={yAxisLabel}
+          showLegend={showLegend}
         />
       </Box>
     </Box>

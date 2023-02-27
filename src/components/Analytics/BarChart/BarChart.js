@@ -1,14 +1,18 @@
 import React from "react";
 import { Bar } from "react-chartjs-2";
 
-const BarChart = ({ chartData, xAxisLabel, yAxisLabel }) => {
+const BarChart = ({ chartData, xAxisLabel, yAxisLabel, showLegend }) => {
   return (
     <Bar
       data={chartData}
       options={{
         plugins: {
           legend: {
-            display: false,
+            display: showLegend ? true : false,
+            title: {
+              text: ["Min", "Max"],
+            },
+            // labels: ["Min", "Max"],
           },
         },
         responsive: true,
