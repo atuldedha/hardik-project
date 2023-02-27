@@ -25,7 +25,7 @@ const Sidebar = ({ selected, setSelected }) => {
         alignItems: "center",
         justifyContent: "center",
         flexDirection: "column",
-        gap: "110px",
+        gap: "80px",
         padding: "0 24px",
         zIndex: 25,
       }}

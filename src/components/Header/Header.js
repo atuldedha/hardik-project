@@ -2,35 +2,32 @@ import { Avatar, Box, Typography } from "@mui/material";
 import React from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
-const Header = ({ selected, setSelected }) => {
+const Header = ({ selected }) => {
   return (
     <Box
       sx={{
-        height: "130px",
+        height: "100px",
         bgcolor: "var(--grayColor)",
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
-        padding: "0 40px 0 22px",
-        // position: "sticky",
-        // top: "0",
-        // zIndex: "20",
+        padding: "0 40px 0 20px",
         filter: "drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.5))",
       }}
     >
       <Typography
-        variant="h2"
-        component="h2"
+        variant="h5"
+        component="span"
         sx={{
           fontFamily: "Roboto, sans-serif",
           fontWeight: "700",
-          fontSize: "40px",
+          fontSize: "30px",
           lineHeight: "46px",
           color: "black",
           textTransform: "uppercase",
         }}
       >
-        Analytics
+        {selected === 1 ? "Hiring Central" : selected === 4 ? "Analytics" : ""}
       </Typography>
       <Box sx={{ display: "flex", alignItems: "center", gap: "20px" }}>
         <Avatar sx={{ bgcolor: "var(--darkGray)" }} alt="name" src="">
@@ -42,8 +39,8 @@ const Header = ({ selected, setSelected }) => {
           sx={{
             fontFamily: "Roboto, sans-serif",
             fontWeight: "700",
-            fontSize: "50px",
-            lineHeight: "58px",
+            fontSize: "40px",
+            lineHeight: "50px",
             color: "black",
             textTransform: "lowercase",
           }}

@@ -1,11 +1,11 @@
 import { Box, Typography } from "@mui/material";
 import React, { useRef } from "react";
-import AnalyticsFinancialYear from "./AnalyticsFinancialYear/AnalyticsFinancialYear";
-import AnalyticsInfo from "./AnalyticsInfo/AnalyticsInfo";
-import AnalyticsLineChart from "./AnalyticsLineChart/AnalyticsLineChart";
-import CollegeNetwork from "./CollegeNetworks/CollegeNetwork";
-import DriveStatistics from "./DriveStatistics/DriveStatistics";
-import JobStatistics from "./JobStatistics/JobStatistics";
+import AnalyticsFinancialYear from "../../components/Analytics/AnalyticsFinancialYear/AnalyticsFinancialYear";
+import AnalyticsInfo from "../../components/Analytics/AnalyticsInfo/AnalyticsInfo";
+import AnalyticsLineChart from "../../components/Analytics/AnalyticsLineChart/AnalyticsLineChart";
+import CollegeNetwork from "../../components/Analytics/CollegeNetworks/CollegeNetwork";
+import DriveStatistics from "../../components/Analytics/DriveStatistics/DriveStatistics";
+import JobStatistics from "../../components/Analytics/JobStatistics/JobStatistics";
 
 const Analytics = () => {
   const jobStatRef = useRef();
