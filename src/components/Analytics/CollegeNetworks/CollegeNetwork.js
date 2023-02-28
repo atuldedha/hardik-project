@@ -59,7 +59,11 @@ const CollegeNetwork = ({ innerRef }) => {
         }}
       >
         {/* custom component to represent experience bar chart */}
-        <PieChartInfo chartData={tierChartData} heading="Tier Wise Hiring" />
+        <PieChartInfo
+          chartData={tierChartData}
+          heading="Tier Wise Hiring"
+          paddingLeft={150}
+        />
         {/* connections */}
         <Connections />
       </Box>

@@ -15,7 +15,7 @@ const AnalyticsItem = ({
   return (
     <Box
       sx={{
-        padding: "20px 0 10px 0",
+        padding: "10px 0 10px 0",
         bgcolor: "var(--gray2)",
         display: "flex",
         alignItems: "center",

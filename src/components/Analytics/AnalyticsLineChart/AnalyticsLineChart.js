@@ -29,7 +29,7 @@ const AnalyticsLineChart = () => {
       sx={{
         display: "flex",
         flexDirection: "column",
-        padding: "28px 72px 10px 22px",
+        padding: "18px 72px 10px 22px",
         border: "1px solid var(--darkGray)",
         borderRadius: "10px",
       }}
@@ -43,7 +43,7 @@ const AnalyticsLineChart = () => {
           fontSize: "40px",
           lineHeight: "47px",
           color: "black",
-          marginBottom: "21px",
+          marginBottom: "10px",
           marginLeft: "50px",
         }}
       >

@@ -11,7 +11,7 @@ const AnalyticsFinancialYear = () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "flex-end",
-        marginBottom: "20px",
+        marginBottom: "10px",
         gap: "10px",
       }}
     >

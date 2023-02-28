@@ -233,11 +233,13 @@ const JobStatistics = ({ innerRef }) => {
         <PieChartInfo
           chartData={jobPieChartData}
           heading="Openings per-Job title"
+          paddingLeft={200}
         />
         {/* custom component to represent job bar chart */}
         <PieChartInfo
           chartData={genderPieChart}
           heading="Gender-Wise Applicants"
+          paddingLeft={150}
         />
       </Box>
 
@@ -282,11 +284,13 @@ const JobStatistics = ({ innerRef }) => {
         <PieChartInfo
           chartData={locationPieChartData}
           heading="Geo Location-wise Jobs Filled"
+          paddingLeft={200}
         />
         {/* custom component to represent job bar chart */}
         <PieChartInfo
           chartData={collegePieChartData}
           heading="College-Wise Job Filled"
+          paddingLeft={240}
         />
       </Box>
     </Box>

@@ -1,15 +1,15 @@
 import React from "react";
 import { Pie } from "react-chartjs-2";
 
-const PieChart = ({ chartData }) => {
+const PieChart = ({ chartData, paddingLeft }) => {
   return (
     <Pie
       data={chartData}
       options={{
         layout: {
           padding: {
-            right: 20,
-            left: 180,
+            right: 50,
+            left: paddingLeft,
           },
         },
         plugins: {
@@ -19,7 +19,7 @@ const PieChart = ({ chartData }) => {
             align: "center",
             position: "right",
             labels: {
-              padding: 20,
+              padding: 3,
             },
           },
         },

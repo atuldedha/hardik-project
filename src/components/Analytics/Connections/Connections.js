@@ -53,10 +53,10 @@ const Connections = () => {
           }}
         >
           <Typography variant="h5" component="span" sx={{ ...textStyle }}>
-            Total
+            Received
           </Typography>
           <Typography variant="h5" component="span" sx={{ ...textStyle }}>
-            100%
+            100
           </Typography>
         </Box>
         {/* progress filled bar */}
@@ -80,10 +80,10 @@ const Connections = () => {
           }}
         >
           <Typography variant="h5" component="span" sx={{ ...textStyle }}>
-            Received
+            Accepted
           </Typography>
           <Typography variant="h5" component="span" sx={{ ...textStyle }}>
-            77%
+            77
           </Typography>
         </Box>
       </Box>
@@ -108,7 +108,7 @@ const Connections = () => {
             Sent
           </Typography>
           <Typography variant="h5" component="span" sx={{ ...textStyle }}>
-            100%
+            100
           </Typography>
         </Box>
         {/* progress filled bar */}
@@ -135,7 +135,7 @@ const Connections = () => {
             Accepted
           </Typography>
           <Typography variant="h5" component="span" sx={{ ...textStyle }}>
-            26%
+            26
           </Typography>
         </Box>
       </Box>

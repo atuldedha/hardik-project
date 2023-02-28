@@ -2,16 +2,17 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 import PieChart from "../PieChart/PieChart";
 
-const PieChartInfo = ({ chartData, heading }) => {
+const PieChartInfo = ({ chartData, heading, paddingLeft }) => {
   return (
     <Box
       sx={{
         display: "flex",
         alignItems: "center",
+        justifyContent: "center",
         flexDirection: "column",
         border: "1px solid var(--darkGray)",
         borderRadius: "10px",
-        padding: "20px 50px",
+        padding: "40px 50px",
       }}
     >
       <Typography
@@ -28,7 +29,7 @@ const PieChartInfo = ({ chartData, heading }) => {
       </Typography>
       {/* applicants chart */}
       <Box sx={{ height: "100%", width: "100%" }}>
-        <PieChart chartData={chartData} />
+        <PieChart chartData={chartData} paddingLeft={paddingLeft} />
       </Box>
     </Box>
   );

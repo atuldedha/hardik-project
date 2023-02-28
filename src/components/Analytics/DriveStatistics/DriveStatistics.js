@@ -75,11 +75,16 @@ const DriveStatistics = ({ innerRef }) => {
         }}
       >
         {/* custom component to represent experience bar chart */}
-        <PieChartInfo chartData={campusChartData} heading="Types of Drives" />
+        <PieChartInfo
+          chartData={campusChartData}
+          heading="Types of Drives"
+          paddingLeft={220}
+        />
         {/* custom component to represent job bar chart */}
         <PieChartInfo
           chartData={driveChartData}
           heading="New v/s Recurring Campus Drives"
+          paddingLeft={170}
         />
       </Box>
 

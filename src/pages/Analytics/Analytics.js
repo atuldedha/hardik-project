@@ -46,7 +46,7 @@ const Analytics = () => {
           display: "flex",
           marginTop: "10px",
           gap: "6px",
-          marginBottom: "24px",
+          marginBottom: "15px",
         }}
       >
         Till Date:
