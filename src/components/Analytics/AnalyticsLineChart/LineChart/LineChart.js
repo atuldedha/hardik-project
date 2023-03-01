@@ -2,9 +2,12 @@ import { Box } from "@mui/system";
 import React from "react";
 import { Line } from "react-chartjs-2";
 
-const LineChart = ({ chartData }) => {
+const LineChart = ({ chartData, openModal }) => {
   return (
-    <Box sx={{ width: "100%", height: "280px" }}>
+    <Box
+      sx={{ width: "100%", height: "280px", cursor: "pointer" }}
+      onClick={openModal}
+    >
       <Line
         data={chartData}
         options={{

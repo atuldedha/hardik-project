@@ -49,7 +49,7 @@
 }
 
 .react-calendar {
-  width: 100% !important;
+  width: 90% !important;
   height: 80% !important;
   padding: 0 !important;
   margin: 0 !important;
@@ -92,4 +92,42 @@
   height: 14px;
   width: 18px;
   object-fit: contain;
+}
+
+.arrowImage {
+  height: 30px;
+  width: 30px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.arrowDownImage {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  transform: rotate(-90deg);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.arrowDownImageLeft {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  transform: rotate(90deg);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.showImageRight {
+  opacity: 1;
+}
+
+.hideImageRight {
+  opacity: 0;
 }

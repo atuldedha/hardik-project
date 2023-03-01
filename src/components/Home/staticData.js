@@ -95,4 +95,10 @@ const collegeData = [
   },
 ];
 
-export { jobStatusData, campusRecruitmentData, collegeData };
+const eventsData = [
+  { id: 1, name: "President's Birthday", date: "20 Feb", day: "Fri" },
+  { id: 2, name: "Good Friday", date: "7 Apr", day: "Fri" },
+  { id: 1, name: "Mother's Day", date: "14 Apr", day: "Fri" },
+];
+
+export { jobStatusData, campusRecruitmentData, collegeData, eventsData };

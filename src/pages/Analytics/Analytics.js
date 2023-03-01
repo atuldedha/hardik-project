@@ -24,7 +24,7 @@ const Analytics = () => {
   return (
     <Box
       sx={{
-        marginTop: "30px",
+        marginTop: "20px",
         padding: "0 55px",
         marginBottom: "130px",
       }}
@@ -46,7 +46,7 @@ const Analytics = () => {
           display: "flex",
           marginTop: "10px",
           gap: "6px",
-          marginBottom: "5px",
+          marginBottom: "2px",
         }}
       >
         Till Date:

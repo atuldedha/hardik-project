@@ -9,3 +9,10 @@
   width: 18px;
   object-fit: contain;
 }
+
+.analyticsModalDropdown {
+  border: none;
+  outline: none;
+  background: inherit;
+  cursor: pointer;
+}
