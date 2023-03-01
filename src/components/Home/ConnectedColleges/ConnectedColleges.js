@@ -11,7 +11,7 @@ const ConnectedColleges = () => {
         border: "1px solid var(--darkGray)",
         borderRadius: "20px",
         bgcolor: "var(--blue2)",
-        padding: "30px",
+        padding: "20px",
       }}
     >
       <Typography
@@ -20,11 +20,11 @@ const ConnectedColleges = () => {
         sx={{
           fontFamily: "Roboto, sans-serif",
           fontWeight: "300",
-          fontSize: "35px",
+          fontSize: "25px",
           lineHeight: "41px",
           color: "black",
           display: "inline-block",
-          marginBottom: "50px",
+          marginBottom: "20px",
         }}
       >
         Recently Connected Colleges

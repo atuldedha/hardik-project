@@ -3,6 +3,7 @@ import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import Arrow from "../../../images/arrowGray.svg";
 import ArrowBlue from "../../../images/arrowBlue.svg";
+import "../../../css/Analytics/Analytics.css";
 
 const AnalyticsItem = ({
   title,
@@ -29,10 +30,10 @@ const AnalyticsItem = ({
         sx={{
           fontFamily: "Roboto, sans-serif",
           fontWeight: "300",
-          fontSize: "30px",
+          fontSize: "20px",
           lineHeight: "35px",
           color: "var(--darkGray)",
-          marginBottom: "26px",
+          marginBottom: "24px",
           textAlign: "center",
         }}
       >
@@ -45,7 +46,7 @@ const AnalyticsItem = ({
         sx={{
           fontFamily: "Roboto, sans-serif",
           fontWeight: "500",
-          fontSize: "40px",
+          fontSize: "30px",
           lineHeight: "46px",
           color: "var(--darkGray)",
           marginBottom: "14px",
@@ -62,7 +63,7 @@ const AnalyticsItem = ({
           sx={{
             fontFamily: "Roboto, sans-serif",
             fontWeight: "300",
-            fontSize: "20px",
+            fontSize: "16px",
             lineHeight: "23px",
             color: "var(--darkGray)",
             display: "flex",
@@ -82,7 +83,11 @@ const AnalyticsItem = ({
           onClick={handleViewMoreClick}
         >
           view more
-          <img src={viewHover ? ArrowBlue : Arrow} alt="arrow" className="" />
+          <img
+            src={viewHover ? ArrowBlue : Arrow}
+            alt="arrow"
+            className="arrowIcon"
+          />
         </Typography>
       ) : (
         ""

@@ -1,5 +1,11 @@
 .analyticsArrowDown {
-  height: 15px;
-  width: 24px;
+  height: 12px;
+  width: 18px;
+  object-fit: contain;
+}
+
+.arrowIcon {
+  height: 14px;
+  width: 18px;
   object-fit: contain;
 }

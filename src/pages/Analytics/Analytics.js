@@ -24,9 +24,9 @@ const Analytics = () => {
   return (
     <Box
       sx={{
-        marginTop: "40px",
-        padding: "0 65px",
-        marginBottom: "140px",
+        marginTop: "30px",
+        padding: "0 55px",
+        marginBottom: "130px",
       }}
     >
       {/*financial year text */}
@@ -41,17 +41,17 @@ const Analytics = () => {
           fontFamily: "Roboto, sans-serif",
           fontWeight: "300",
           color: "black",
-          fontSize: "20px",
+          fontSize: "16px",
           lineHeight: "23px",
           display: "flex",
           marginTop: "10px",
           gap: "6px",
-          marginBottom: "15px",
+          marginBottom: "5px",
         }}
       >
         Till Date:
         <Typography
-          sx={{ fontWeight: "700", fontSize: "25px", lineHeight: "29px" }}
+          sx={{ fontWeight: "700", fontSize: "18px", lineHeight: "29px" }}
         >
           *
         </Typography>

@@ -212,6 +212,27 @@ const locationWiseData = [
   },
 ];
 
+const jobTypeData = [
+  {
+    id: 1,
+    name: "Soft. Dev",
+    max: 80,
+    value: 60,
+  },
+  {
+    id: 2,
+    name: "IOS Dev",
+    max: 80,
+    value: 50,
+  },
+  {
+    id: 3,
+    name: "Mechanical",
+    max: 65,
+    value: 60,
+  },
+];
+
 export {
   experienceData,
   jobData,
@@ -223,4 +244,5 @@ export {
   campusData,
   driveData,
   locationWiseData,
+  jobTypeData,
 };

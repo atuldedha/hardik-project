@@ -18,7 +18,7 @@ const CollegeNetwork = ({ innerRef }) => {
     ],
   });
   return (
-    <Box sx={{ marginTop: "200px" }} ref={innerRef}>
+    <Box sx={{ marginTop: "100px" }} ref={innerRef}>
       {/* heading */}
       <Typography
         variant="h5"
@@ -26,7 +26,7 @@ const CollegeNetwork = ({ innerRef }) => {
         sx={{
           fontFamily: "Roboto, sans-serif",
           fontWeight: 700,
-          fontSize: "40px",
+          fontSize: "30px",
           lineHeight: "47px",
           color: "var(--darkGray)",
           marginBottom: "20px",
@@ -54,15 +54,15 @@ const CollegeNetwork = ({ innerRef }) => {
           display: "grid",
           gridTemplateColumns: "2fr 2fr",
           gap: "20px",
-          height: "330px",
-          marginTop: "40px",
+          height: "250px",
+          marginTop: "20px",
         }}
       >
         {/* custom component to represent experience bar chart */}
         <PieChartInfo
           chartData={tierChartData}
           heading="Tier Wise Hiring"
-          paddingLeft={150}
+          paddingLeft={100}
         />
         {/* connections */}
         <Connections />

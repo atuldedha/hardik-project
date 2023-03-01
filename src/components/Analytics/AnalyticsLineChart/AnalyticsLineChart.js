@@ -40,10 +40,10 @@ const AnalyticsLineChart = () => {
         sx={{
           fontFamily: "Roboto, sans-serif",
           fontWeight: "700",
-          fontSize: "40px",
+          fontSize: "30px",
           lineHeight: "47px",
           color: "black",
-          marginBottom: "10px",
+          marginBottom: "5px",
           marginLeft: "50px",
         }}
       >

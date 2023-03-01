@@ -141,7 +141,7 @@ const JobStatistics = ({ innerRef }) => {
         sx={{
           fontFamily: "Roboto, sans-serif",
           fontWeight: 700,
-          fontSize: "40px",
+          fontSize: "30px",
           lineHeight: "47px",
           color: "var(--darkGray)",
           marginBottom: "10px",
@@ -177,7 +177,7 @@ const JobStatistics = ({ innerRef }) => {
           fontFamily: "Roboto, sans-serif",
           fontWeight: "300",
           color: "black",
-          fontSize: "20px",
+          fontSize: "16px",
           lineHeight: "23px",
           display: "flex",
           marginTop: "10px",
@@ -187,7 +187,7 @@ const JobStatistics = ({ innerRef }) => {
       >
         Till Date:
         <Typography
-          sx={{ fontWeight: "700", fontSize: "25px", lineHeight: "29px" }}
+          sx={{ fontWeight: "700", fontSize: "18px", lineHeight: "29px" }}
         >
           *
         </Typography>
@@ -199,7 +199,7 @@ const JobStatistics = ({ innerRef }) => {
           display: "grid",
           gridTemplateColumns: "2fr 2fr",
           gap: "20px",
-          height: "330px",
+          height: "250px",
           marginTop: "16px",
         }}
       >
@@ -225,7 +225,7 @@ const JobStatistics = ({ innerRef }) => {
           display: "grid",
           gridTemplateColumns: "2fr 2fr",
           gap: "20px",
-          height: "330px",
+          height: "250px",
           marginTop: "16px",
         }}
       >
@@ -233,13 +233,13 @@ const JobStatistics = ({ innerRef }) => {
         <PieChartInfo
           chartData={jobPieChartData}
           heading="Openings per-Job title"
-          paddingLeft={200}
+          paddingLeft={160}
         />
         {/* custom component to represent job bar chart */}
         <PieChartInfo
           chartData={genderPieChart}
           heading="Gender-Wise Applicants"
-          paddingLeft={150}
+          paddingLeft={100}
         />
       </Box>
 
@@ -249,7 +249,7 @@ const JobStatistics = ({ innerRef }) => {
           display: "grid",
           gridTemplateColumns: "2fr 2fr",
           gap: "20px",
-          height: "330px",
+          height: "250px",
           marginTop: "200px",
         }}
         ref={filledJobRef}
@@ -276,7 +276,7 @@ const JobStatistics = ({ innerRef }) => {
           display: "grid",
           gridTemplateColumns: "2fr 2fr",
           gap: "20px",
-          height: "330px",
+          height: "250px",
           marginTop: "16px",
         }}
       >
@@ -284,13 +284,13 @@ const JobStatistics = ({ innerRef }) => {
         <PieChartInfo
           chartData={locationPieChartData}
           heading="Geo Location-wise Jobs Filled"
-          paddingLeft={200}
+          paddingLeft={150}
         />
         {/* custom component to represent job bar chart */}
         <PieChartInfo
           chartData={collegePieChartData}
           heading="College-Wise Job Filled"
-          paddingLeft={240}
+          paddingLeft={170}
         />
       </Box>
     </Box>

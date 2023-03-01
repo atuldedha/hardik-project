@@ -9,18 +9,18 @@ const CollegeItem = ({ image, name }) => {
         display: "flex",
         alignItems: "center",
         gap: "20px",
-        marginBottom: "10px",
+        marginBottom: "8px",
       }}
     >
-      <Avatar alt="image" src={image} sx={{ width: "40px", height: "40px" }} />
+      <Avatar alt="image" src={image} sx={{ width: "30px", height: "30px" }} />
       <Typography
         variant="h5"
         component="span"
         sx={{
           fontFamily: "Roboto, sans-serif",
           fontWeight: 300,
-          fontSize: "28px",
-          lineHeight: "32px",
+          fontSize: "20px",
+          lineHeight: "26px",
           color: "black",
         }}
       >

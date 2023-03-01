@@ -18,7 +18,7 @@ const Connections = () => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        padding: "20px 70px 50px",
+        padding: "20px 70px 20px",
       }}
     >
       <Typography
@@ -38,7 +38,7 @@ const Connections = () => {
 
       <Box
         sx={{
-          marginTop: "80px",
+          marginTop: "40px",
           display: "flex",
           alignItems: "center",
           width: "100%",

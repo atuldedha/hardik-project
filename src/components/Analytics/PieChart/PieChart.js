@@ -8,7 +8,7 @@ const PieChart = ({ chartData, paddingLeft }) => {
       options={{
         layout: {
           padding: {
-            right: 50,
+            right: 0,
             left: paddingLeft,
           },
         },

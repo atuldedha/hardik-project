@@ -9,7 +9,7 @@ const Onboarding = () => {
       sx={{
         border: "1px solid var(--darkGray)",
         borderRadius: "10px",
-        padding: "40px 35px",
+        padding: "25px 20px",
       }}
     >
       <Typography
@@ -18,11 +18,11 @@ const Onboarding = () => {
         sx={{
           fontFamily: "Roboto, sans-serif",
           fontWeight: 300,
-          fontSize: "40px",
+          fontSize: "30px",
           lineHeight: "47px",
           color: "black",
           display: "flex",
-          marginBottom: "45px",
+          marginBottom: "25px",
         }}
       >
         Onboarding

@@ -6,12 +6,14 @@ const Header = ({ selected }) => {
   return (
     <Box
       sx={{
-        height: "100px",
+        height: "70px",
         bgcolor: "var(--grayColor)",
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
         padding: "0 40px 0 20px",
+        position: "sticky",
+        top: "0",
         filter: "drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.5))",
       }}
     >
@@ -21,7 +23,7 @@ const Header = ({ selected }) => {
         sx={{
           fontFamily: "Roboto, sans-serif",
           fontWeight: "700",
-          fontSize: "30px",
+          fontSize: "25px",
           lineHeight: "46px",
           color: "black",
           textTransform: "uppercase",
@@ -39,7 +41,7 @@ const Header = ({ selected }) => {
           sx={{
             fontFamily: "Roboto, sans-serif",
             fontWeight: "700",
-            fontSize: "40px",
+            fontSize: "30px",
             lineHeight: "50px",
             color: "black",
             textTransform: "lowercase",

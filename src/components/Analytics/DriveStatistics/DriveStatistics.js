@@ -46,7 +46,7 @@ const DriveStatistics = ({ innerRef }) => {
   return (
     <Box
       sx={{
-        marginTop: "150px",
+        marginTop: "100px",
       }}
       ref={innerRef}
     >
@@ -56,11 +56,11 @@ const DriveStatistics = ({ innerRef }) => {
         sx={{
           fontFamily: "Roboto, sans-serif",
           fontWeight: 700,
-          fontSize: "40px",
+          fontSize: "30px",
           lineHeight: "47px",
           color: "var(--darkGray)",
           display: "inline-block",
-          marginBottom: "35px",
+          marginBottom: "15px",
         }}
       >
         Drive Statistics
@@ -71,20 +71,20 @@ const DriveStatistics = ({ innerRef }) => {
           display: "grid",
           gridTemplateColumns: "2fr 2fr",
           gap: "20px",
-          height: "330px",
+          height: "250px",
         }}
       >
         {/* custom component to represent experience bar chart */}
         <PieChartInfo
           chartData={campusChartData}
           heading="Types of Drives"
-          paddingLeft={220}
+          paddingLeft={170}
         />
         {/* custom component to represent job bar chart */}
         <PieChartInfo
           chartData={driveChartData}
           heading="New v/s Recurring Campus Drives"
-          paddingLeft={170}
+          paddingLeft={100}
         />
       </Box>
 
@@ -93,7 +93,7 @@ const DriveStatistics = ({ innerRef }) => {
           display: "grid",
           gridTemplateColumns: "2fr 2fr",
           gap: "20px",
-          height: "330px",
+          height: "250px",
           marginTop: "15px",
         }}
       >

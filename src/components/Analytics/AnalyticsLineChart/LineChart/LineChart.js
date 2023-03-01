@@ -4,7 +4,7 @@ import { Line } from "react-chartjs-2";
 
 const LineChart = ({ chartData }) => {
   return (
-    <Box sx={{ width: "100%", height: "440px" }}>
+    <Box sx={{ width: "100%", height: "280px" }}>
       <Line
         data={chartData}
         options={{

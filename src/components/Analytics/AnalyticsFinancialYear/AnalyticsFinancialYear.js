@@ -21,7 +21,7 @@ const AnalyticsFinancialYear = () => {
         sx={{
           fontFamily: "Roboto, sans-serif",
           fontWeight: "400",
-          fontSize: "25px",
+          fontSize: "18px",
           leading: "29px",
           color: "black",
         }}
@@ -33,7 +33,7 @@ const AnalyticsFinancialYear = () => {
           display: "flex",
           alignItems: "center",
           border: "1px solid var(--darkGray)",
-          padding: "10px 25px",
+          padding: "2px 14px",
           borderRadius: "10px",
           gap: "10px",
           ":hover": {
@@ -45,7 +45,7 @@ const AnalyticsFinancialYear = () => {
           sx={{
             fontFamily: "Roboto, sans-serif",
             fontWeight: "300",
-            fontSize: "20px",
+            fontSize: "14px",
             lineHeight: "24px",
             color: "var(--darkGray)",
           }}

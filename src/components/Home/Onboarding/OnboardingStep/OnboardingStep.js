@@ -15,7 +15,7 @@ const OnboardingStep = ({
         display: "flex",
         flexDirection: "column",
         gap: "20px",
-        marginBottom: "40px",
+        marginBottom: "20px",
       }}
     >
       <Typography
@@ -24,7 +24,7 @@ const OnboardingStep = ({
         sx={{
           fontFamily: "Roboto, sans-serif",
           fontWeight: 400,
-          fontSize: "25px",
+          fontSize: "20px",
           lineHeight: "29px",
         }}
       >

@@ -11,9 +11,9 @@ const SidebarItem = ({
   return (
     <Box
       sx={{
-        padding: "20px",
+        padding: "15px",
         bgcolor: selected === index ? "var(--darkGray)" : "inherit",
-        borderRadius: "28px",
+        borderRadius: "20px",
         ":hover": { cursor: "pointer" },
       }}
       onClick={() => setSelected(index)}

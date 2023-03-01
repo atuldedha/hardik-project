@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { campusRecruitmentData } from "../staticData";
 import Arrow from "../../../images/arrowGray.svg";
 import ArrowBlue from "../../../images/arrowBlue.svg";
+import "../../../css/Home/Home.css";
 
 const CampusRecruitment = () => {
   const [viewHover, setViewHover] = useState(false);
@@ -11,7 +12,7 @@ const CampusRecruitment = () => {
       sx={{
         border: "1px solid var(--darkGray)",
         borderRadius: "20px",
-        padding: "35px 35px 70px 24px",
+        padding: "35px 35px 30px 24px",
       }}
     >
       <Typography
@@ -20,10 +21,10 @@ const CampusRecruitment = () => {
         sx={{
           fontFamily: "Roboto, sans-serif",
           fontWeight: 700,
-          fontSize: "40px",
-          lineHeight: "47px",
+          fontSize: "30px",
+          lineHeight: "37px",
           color: "black",
-          marginBottom: "30px",
+          marginBottom: "10px",
           display: "inline-block",
         }}
       >
@@ -60,7 +61,7 @@ const CampusRecruitment = () => {
           sx={{
             fontFamily: "Roboto, sans-serif",
             fontWeight: "300",
-            fontSize: "20px",
+            fontSize: "16px",
             lineHeight: "23px",
             color: "var(--darkGray)",
             display: "flex",
@@ -79,7 +80,11 @@ const CampusRecruitment = () => {
           onClick={() => {}}
         >
           view more
-          <img src={viewHover ? ArrowBlue : Arrow} alt="arrow" className="" />
+          <img
+            src={viewHover ? ArrowBlue : Arrow}
+            alt="arrow"
+            className="arrowIcon"
+          />
         </Typography>
       </Box>
     </Box>

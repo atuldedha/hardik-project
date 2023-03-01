@@ -13,7 +13,7 @@ const MyCalendar = () => {
         bgcolor: "var(--darkGray)",
         border: "1px solid var(--darkGray)",
         borderRadius: "20px",
-        padding: "35px 35px 70px 24px",
+        padding: "35px 35px 30px 24px",
       }}
     >
       <Typography
@@ -22,11 +22,11 @@ const MyCalendar = () => {
         sx={{
           fontFamily: "Roboto, sans-serif",
           fontWeight: 300,
-          fontSize: "50px",
-          lineHeight: "58px",
+          fontSize: "30px",
+          lineHeight: "35px",
           color: "white",
           display: "inline-block",
-          marginBottom: "20px",
+          marginBottom: "10px",
         }}
       >
         Calendar
@@ -47,12 +47,15 @@ const MyCalendar = () => {
             padding: "10px 40px",
             fontFamily: "Roboto, sans-serif",
             fontWeight: "400",
-            fontSize: "22px",
-            lineHeight: "25px",
+            fontSize: "16px",
+            lineHeight: "20px",
             color: "var(--grayColor)",
             width: "max-content",
+            transition: "0.5s ease-in-out",
             ":hover": {
               cursor: "pointer",
+              bgcolor: "var(--grayColor)",
+              color: "var(--darkGray)",
             },
           }}
         >

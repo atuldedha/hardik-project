@@ -18,7 +18,7 @@ const BarChartInfo = ({
         flexDirection: "column",
         border: "1px solid var(--darkGray)",
         borderRadius: "10px",
-        padding: "20px 50px",
+        padding: "10px 50px",
       }}
     >
       <Typography
@@ -28,13 +28,13 @@ const BarChartInfo = ({
           color: "var(--darkGray)",
           fontSize: "20px",
           lineHeight: "23px",
-          marginBottom: "20px",
+          marginBottom: "10px",
         }}
       >
         {heading}
       </Typography>
       {/* applicants chart */}
-      <Box sx={{ height: "100%", width: "100%" }}>
+      <Box sx={{ height: "200px", width: "100%" }}>
         <BarChart
           chartData={chartData}
           xAxisLabel={xAxisLabel}

@@ -9,7 +9,7 @@ const JobStatus = () => {
       sx={{
         border: "1px solid var(--darkGray)",
         borderRadius: "20px",
-        padding: "35px 35px 70px 24px",
+        padding: "35px 35px 30px 24px",
       }}
     >
       <Typography
@@ -18,20 +18,22 @@ const JobStatus = () => {
         sx={{
           fontFamily: "Roboto, sans-serif",
           fontWeight: 700,
-          fontSize: "40px",
+          fontSize: "30px",
           lineHeight: "47px",
           color: "black",
-          marginBottom: "30px",
+          marginBottom: "10px",
           display: "inline-block",
         }}
       >
         Job Status
       </Typography>
 
-      <table className="homeJobStatusTable" cellPadding={10}>
+      <table className="homeJobStatusTable" cellPadding={5}>
         <thead>
           <tr className="homeJobStatusTableHeader">
-            <th align="center">Title</th>
+            <th align="center" style={{ paddingRight: "25px" }}>
+              Title
+            </th>
             <th align="center" className="homeJobStatusTableLargeWidth">
               Total Openings
             </th>
@@ -53,13 +55,19 @@ const JobStatus = () => {
                 <Box
                   sx={{
                     border: "1px solid var(--darkGray)",
-                    borderRadius: "15px",
-                    padding: "7px 20px",
+                    borderRadius: "10px",
+                    padding: "2px 20px",
                     fontFamily: "Roboto, sans-serif",
                     fontWeight: "300",
-                    fontSize: "22px",
+                    fontSize: "14px",
                     lineHeight: "25px",
                     color: "var(--darkGray)",
+                    transition: "0.5s ease-in-out",
+                    ":hover": {
+                      cursor: "pointer",
+                      bgcolor: "var(--darkGray)",
+                      color: "white",
+                    },
                   }}
                 >
                   View

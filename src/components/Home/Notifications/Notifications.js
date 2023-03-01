@@ -4,7 +4,7 @@ import React from "react";
 
 const boldTextStyle = {
   fontFamily: "Roboto, sans-serif",
-  fontSize: "20px",
+  fontSize: "16px",
   fontWeight: 700,
   lineHeight: "23px",
   letterSpacing: "0em",
@@ -21,7 +21,7 @@ const Notifications = () => {
         border: "1px solid var(--darkGray)",
         borderRadius: "20px",
         bgcolor: "var(--blue2)",
-        padding: "50px",
+        padding: "30px 50px",
       }}
     >
       <Typography
@@ -30,11 +30,11 @@ const Notifications = () => {
         sx={{
           fontFamily: "Roboto, sans-serif",
           fontWeight: 300,
-          fontSize: "40px",
+          fontSize: "30px",
           lineHeight: "46px",
           color: "black",
           display: "inline-block",
-          marginBottom: "60px",
+          marginBottom: "25px",
         }}
       >
         Notifications

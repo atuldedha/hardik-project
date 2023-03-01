@@ -11,7 +11,7 @@ import Reports from "../../components/Home/Reports/Reports";
 
 const Home = () => {
   return (
-    <Box sx={{ marginTop: "70px", padding: "0 65px", marginBottom: "140px" }}>
+    <Box sx={{ marginTop: "30px", padding: "0 55px", marginBottom: "100px" }}>
       <Box
         sx={{
           display: "grid",
