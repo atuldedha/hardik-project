@@ -20,7 +20,7 @@ const JobStatistics = ({ innerRef }) => {
     labels: experienceData.map((item) => item.range),
     datasets: [
       {
-        label: { display: false },
+        label: "Applicants",
         data: experienceData.map((item) => item.value),
         backgroundColor: ["#FFD76E"],
         borderColor: "#FFD76E",
@@ -35,7 +35,7 @@ const JobStatistics = ({ innerRef }) => {
     labels: jobData.map((item) => item.name),
     datasets: [
       {
-        label: { display: false },
+        label: "Applicants",
         data: jobData.map((item) => item.value),
         backgroundColor: ["#9F629A"],
         borderColor: "#9F629A",
@@ -49,7 +49,7 @@ const JobStatistics = ({ innerRef }) => {
     labels: jobPieChart.map((item) => item.name),
     datasets: [
       {
-        label: { display: false },
+        label: "Applicants",
         data: jobPieChart.map((item) => item.value),
         backgroundColor: ["#5E3FBE", "#F4F0FD", "#E5DAFB", "#CBB6F8"],
       },
@@ -60,7 +60,7 @@ const JobStatistics = ({ innerRef }) => {
     labels: genderChartData.map((item) => item.name),
     datasets: [
       {
-        label: { display: false },
+        label: "Applicants",
         data: genderChartData.map((item) => item.value),
         backgroundColor: ["#67C587", "#C9E5D0"],
       },
@@ -71,7 +71,7 @@ const JobStatistics = ({ innerRef }) => {
     labels: jobData.map((item) => item.name),
     datasets: [
       {
-        label: { display: false },
+        label: "Job Filled",
         data: jobData.map((item) => item.value),
         backgroundColor: ["#67C587"],
         borderColor: "#67C587",
@@ -85,7 +85,7 @@ const JobStatistics = ({ innerRef }) => {
     labels: ctcBarChartData.map((item) => item.name),
     datasets: [
       {
-        label: { display: false },
+        label: "Max",
         data: ctcBarChartData.map((item) => item.max / 10),
         backgroundColor: ["#FF9C09"],
         borderColor: "#FF9C09",
@@ -93,7 +93,7 @@ const JobStatistics = ({ innerRef }) => {
         barThickness: 20,
       },
       {
-        label: { display: false },
+        label: "Min",
         data: ctcBarChartData.map((item) => item.value / 10),
         backgroundColor: ["#FFD76F"],
         borderColor: "#FFD76F",
@@ -108,7 +108,7 @@ const JobStatistics = ({ innerRef }) => {
     labels: jobPieChart.map((item) => item.name),
     datasets: [
       {
-        label: { display: false },
+        label: "Applicants",
         data: jobPieChart.map((item) => item.value),
         backgroundColor: ["#3F81BE", "#F0F9FD", "#DAF5FB", "#B6E8F8"],
       },
@@ -120,7 +120,7 @@ const JobStatistics = ({ innerRef }) => {
     labels: collegePieChart.map((item) => item.name),
     datasets: [
       {
-        label: { display: false },
+        label: "Applicants",
         data: collegePieChart.map((item) => item.value),
         backgroundColor: [
           "#FF7008",
@@ -267,6 +267,7 @@ const JobStatistics = ({ innerRef }) => {
           heading="CTC Offered"
           xAxisLabel="Job Title"
           yAxisLabel="CTC (in lakhs)"
+          showLegend
         />
       </Box>
 

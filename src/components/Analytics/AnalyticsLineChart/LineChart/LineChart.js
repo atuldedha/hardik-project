@@ -23,7 +23,7 @@ const LineChart = ({ chartData, openModal }) => {
               beginAtZero: true,
               title: {
                 display: true,
-                text: "Total Connections",
+                text: "Total Hired",
               },
             },
             x: {

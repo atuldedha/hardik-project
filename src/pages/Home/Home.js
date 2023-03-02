@@ -15,7 +15,7 @@ const Home = () => {
       <Box
         sx={{
           display: "grid",
-          gridTemplateColumns: "2fr 2fr",
+          gridTemplateColumns: "3fr 2fr",
           gap: "20px",
           marginBottom: "40px",
         }}
@@ -29,7 +29,7 @@ const Home = () => {
       <Box
         sx={{
           display: "grid",
-          gridTemplateColumns: "2fr 2fr",
+          gridTemplateColumns: "3fr 2fr",
           gap: "20px",
           marginBottom: "40px",
         }}
@@ -43,7 +43,7 @@ const Home = () => {
       <Box
         sx={{
           display: "grid",
-          gridTemplateColumns: "2fr 3fr 3fr",
+          gridTemplateColumns: "2.5fr 3fr 2.5fr",
           gap: "20px",
         }}
       >

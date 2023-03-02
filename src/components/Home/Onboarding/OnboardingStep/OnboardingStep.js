@@ -18,24 +18,27 @@ const OnboardingStep = ({
         marginBottom: "20px",
       }}
     >
-      <Typography
-        variant="h5"
-        component="span"
-        sx={{
-          fontFamily: "Roboto, sans-serif",
-          fontWeight: 400,
-          fontSize: "20px",
-          lineHeight: "29px",
-        }}
-      >
-        {name}
-      </Typography>
+      <Box>
+        <Typography
+          variant="h5"
+          component="span"
+          sx={{
+            fontFamily: "Roboto, sans-serif",
+            fontWeight: 400,
+            fontSize: "20px",
+            lineHeight: "29px",
+          }}
+        >
+          {name}
+        </Typography>
 
-      <ProgressBar
-        fullWidthColor={fullWidthColor}
-        acheivedPercentage={acheivedPercentage}
-        acheivedWidthColor={acheivedWidthColor}
-      />
+        <ProgressBar
+          fullWidthColor={fullWidthColor}
+          acheivedPercentage={acheivedPercentage}
+          acheivedWidthColor={acheivedWidthColor}
+          showPercentage
+        />
+      </Box>
     </Box>
   );
 };

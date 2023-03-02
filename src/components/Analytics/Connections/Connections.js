@@ -41,6 +41,7 @@ const Connections = () => {
           marginTop: "40px",
           display: "flex",
           alignItems: "center",
+          justifyContent: "center",
           width: "100%",
           gap: "5px",
         }}
@@ -50,6 +51,7 @@ const Connections = () => {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            width: "70px",
           }}
         >
           <Typography variant="h5" component="span" sx={{ ...textStyle }}>
@@ -60,7 +62,7 @@ const Connections = () => {
           </Typography>
         </Box>
         {/* progress filled bar */}
-        <Box sx={{ flexGrow: 1, width: "100%" }}>
+        <Box sx={{ width: "300px" }}>
           <ProgressBar
             fullWidthColor="#C9E5D0"
             acheivedPercentage="77%"
@@ -77,6 +79,7 @@ const Connections = () => {
             fontSize: "15px",
             textAlign: "center",
             lineHeight: "18px",
+            width: "70px",
           }}
         >
           <Typography variant="h5" component="span" sx={{ ...textStyle }}>
@@ -93,6 +96,7 @@ const Connections = () => {
           marginTop: "60px",
           display: "flex",
           alignItems: "center",
+          justifyContent: "center",
           width: "100%",
           gap: "5px",
         }}
@@ -102,6 +106,7 @@ const Connections = () => {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            width: "70px",
           }}
         >
           <Typography variant="h5" component="span" sx={{ ...textStyle }}>
@@ -112,7 +117,7 @@ const Connections = () => {
           </Typography>
         </Box>
         {/* progress filled bar */}
-        <Box sx={{ flexGrow: 1, width: "100%" }}>
+        <Box sx={{ width: "300px" }}>
           <ProgressBar
             fullWidthColor="#CBB6F8"
             acheivedPercentage="26%"
@@ -129,6 +134,7 @@ const Connections = () => {
             fontSize: "15px",
             textAlign: "center",
             lineHeight: "18px",
+            width: "70px",
           }}
         >
           <Typography variant="h5" component="span" sx={{ ...textStyle }}>

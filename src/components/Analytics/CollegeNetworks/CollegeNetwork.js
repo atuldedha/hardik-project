@@ -11,7 +11,7 @@ const CollegeNetwork = ({ innerRef }) => {
     labels: tierData.map((item) => item.name),
     datasets: [
       {
-        label: { display: false },
+        label: "Applicants",
         data: tierData.map((item) => item.value),
         backgroundColor: ["#9F629A", "#FFD76F", "#E37C7C"],
       },

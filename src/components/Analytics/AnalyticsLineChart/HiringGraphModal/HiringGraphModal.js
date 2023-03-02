@@ -34,7 +34,7 @@ const HiringGraphModal = (props) => {
     labels: data.map((item) => item.month),
     datasets: [
       {
-        label: { display: false },
+        label: "Hired",
         data: data.map((item) => item.value),
         borderWidth: 2,
         borderColor: "#00A3FF",

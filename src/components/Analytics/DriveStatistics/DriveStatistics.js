@@ -10,7 +10,7 @@ const DriveStatistics = ({ innerRef }) => {
     labels: campusData.map((item) => item.name),
     datasets: [
       {
-        label: { display: false },
+        label: "Applicants",
         data: campusData.map((item) => item.value),
         backgroundColor: ["#E5C646", "#F9F5E5", "#F4E9BD"],
       },
@@ -22,7 +22,7 @@ const DriveStatistics = ({ innerRef }) => {
     labels: driveData.map((item) => item.name),
     datasets: [
       {
-        label: { display: false },
+        label: "Applicants",
         data: driveData.map((item) => item.value),
         backgroundColor: ["#FF7008", "#FFD28F"],
       },
@@ -34,7 +34,7 @@ const DriveStatistics = ({ innerRef }) => {
     labels: locationWiseData.map((item) => item.name),
     datasets: [
       {
-        label: { display: false },
+        label: "Openings",
         data: locationWiseData.map((item) => item.value),
         backgroundColor: ["#A39C00"],
         borderColor: "#A39C00",
@@ -101,8 +101,8 @@ const DriveStatistics = ({ innerRef }) => {
         <BarChartInfo
           chartData={locationChartData}
           heading="Location-Wise Openings"
-          xAxisLabel="Job Openings"
-          yAxisLabel="Total Drives"
+          xAxisLabel="Location"
+          yAxisLabel="Openings"
         />
       </Box>
     </Box>

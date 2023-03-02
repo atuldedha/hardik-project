@@ -7,7 +7,7 @@ import College from "./College";
 
 const ConnectedColleges = () => {
   // state to manage right arrow
-  const [showArrowRight, setShowArrowRight] = useState(true);
+  const [showArrowRight, setShowArrowRight] = useState(false);
   // state to manage left arrow
   const [showArrowLeft, setShowArrowLeft] = useState(false);
   // state to show new colleges
@@ -47,14 +47,14 @@ const ConnectedColleges = () => {
         }}
       >
         {/* custom component to render data */}
-        <College heading="Recently Connected Colleges" data={collegeData} />
+        <College heading="Recently Connected" data={collegeData} />
       </Box>
 
       {/* right animation box */}
       <Box
         sx={{
           position: "absolute",
-          right: showNewCollege ? "50px" : "-50px",
+          right: showNewCollege ? "130px" : "-50px",
           top: "20px",
           display: "flex",
           flexDirection: "column",

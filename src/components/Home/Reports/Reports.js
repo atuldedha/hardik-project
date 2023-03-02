@@ -10,7 +10,7 @@ const Reports = () => {
     labels: jobTypeData.map((item) => item.name),
     datasets: [
       {
-        label: { display: false },
+        label: "Max",
         data: jobTypeData.map((item) => item.max / 10),
         backgroundColor: ["#FF9C09"],
         borderColor: "#FF9C09",
@@ -18,7 +18,7 @@ const Reports = () => {
         barThickness: 20,
       },
       {
-        label: { display: false },
+        label: "Min",
         data: jobTypeData.map((item) => item.value / 10),
         backgroundColor: ["#FFD76F"],
         borderColor: "#FFD76F",
@@ -57,6 +57,7 @@ const Reports = () => {
           chartData={ctcChartData}
           xAxisLabel="Job Type"
           yAxisLabel="CTC Offered (in lakhs)"
+          showLegend
         />
       </Box>
 

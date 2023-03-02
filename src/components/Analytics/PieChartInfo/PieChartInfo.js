@@ -12,7 +12,7 @@ const PieChartInfo = ({ chartData, heading, paddingLeft }) => {
         flexDirection: "column",
         border: "1px solid var(--darkGray)",
         borderRadius: "10px",
-        padding: "20px 20px",
+        padding: "20px 10px",
       }}
     >
       <Typography
