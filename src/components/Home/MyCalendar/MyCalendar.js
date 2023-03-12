@@ -122,7 +122,7 @@ const MyCalendar = () => {
         <img
           src={ArrowRightGray}
           alt="icon"
-          onClick={showArrowRight ? activateEvents : ""}
+          onClick={showArrowRight ? activateEvents : () => {}}
           className={`arrowImage ${
             showArrowRight ? "showImageRight" : "hideImageRight"
           }`}
@@ -148,7 +148,7 @@ const MyCalendar = () => {
         <img
           src={ArrowRightGray}
           alt="icon"
-          onClick={showArrowLeft ? activateCalendar : ""}
+          onClick={showArrowLeft ? activateCalendar : () => {}}
           className={`arrowImage rotate ${
             showArrowLeft ? "showImageRight" : "hideImageRight"
           }`}

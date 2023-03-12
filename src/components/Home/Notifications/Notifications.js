@@ -109,7 +109,7 @@ const Notifications = () => {
             src={Arrow}
             alt="arrow"
             className={`arrowImage rotate`}
-            onClick={showArrowUp ? scrollUp : ""}
+            onClick={showArrowUp ? scrollUp : () => {}}
           />
         </Box>
 
@@ -127,7 +127,7 @@ const Notifications = () => {
             src={Arrow}
             alt="arrow"
             className={`arrowImage`}
-            onClick={showArrowDown ? scrollDown : ""}
+            onClick={showArrowDown ? scrollDown : () => {}}
           />
         </Box>
       </Box>

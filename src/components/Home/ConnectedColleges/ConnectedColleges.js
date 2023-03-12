@@ -85,7 +85,7 @@ const ConnectedColleges = () => {
         <img
           src={ArrowDown}
           alt="icon"
-          onClick={showArrowRight ? activeNewClgSlide : ""}
+          onClick={showArrowRight ? activeNewClgSlide : () => {}}
           className={`arrowDownImage ${
             showArrowRight ? "showImageRight" : "hideImageRight"
           }`}
@@ -111,7 +111,7 @@ const ConnectedColleges = () => {
         <img
           src={ArrowDown}
           alt="icon"
-          onClick={showArrowLeft ? activeRecentClgSlide : ""}
+          onClick={showArrowLeft ? activeRecentClgSlide : () => {}}
           className={`arrowDownImageLeft ${
             showArrowLeft ? "showImageRight" : "hideImageRight"
           }`}

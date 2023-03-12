@@ -26,7 +26,7 @@ const AnalyticsItem = ({
     >
       <Typography
         variant="h5"
-        component="h5"
+        component="span"
         sx={{
           fontFamily: "Roboto, sans-serif",
           fontWeight: "300",
@@ -42,7 +42,7 @@ const AnalyticsItem = ({
 
       <Typography
         variant="h5"
-        component="h5"
+        component="span"
         sx={{
           fontFamily: "Roboto, sans-serif",
           fontWeight: "500",
@@ -59,7 +59,7 @@ const AnalyticsItem = ({
       {showViewMore ? (
         <Typography
           variant="h5"
-          component="h5"
+          component="span"
           sx={{
             fontFamily: "Roboto, sans-serif",
             fontWeight: "300",

@@ -112,7 +112,7 @@ const HiringGraphModal = (props) => {
               className="analyticsModalDropdown"
             >
               {years.map((year) => (
-                <option value={year} id={year}>
+                <option key={year} value={year} id={year}>
                   {year}
                 </option>
               ))}

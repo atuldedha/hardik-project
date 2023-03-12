@@ -17,7 +17,7 @@ const AnalyticsFinancialYear = () => {
     >
       <Typography
         variant="h2"
-        component="h2"
+        component="span"
         sx={{
           fontFamily: "Roboto, sans-serif",
           fontWeight: "400",

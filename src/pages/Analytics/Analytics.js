@@ -37,6 +37,7 @@ const Analytics = () => {
 
       {/* current Date Text */}
       <Typography
+        component="span"
         sx={{
           fontFamily: "Roboto, sans-serif",
           fontWeight: "300",
@@ -51,6 +52,7 @@ const Analytics = () => {
       >
         Till Date:
         <Typography
+          component="span"
           sx={{ fontWeight: "700", fontSize: "18px", lineHeight: "29px" }}
         >
           *
